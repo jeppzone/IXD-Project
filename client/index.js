@@ -1,5 +1,5 @@
-var API_URL = 'http://localhost:3000'
-var body = document.querySelector('body');
+var API_URL = 'https://ixd-project-backend.herokuapp.com'
+var forest = document.querySelector('#forest');
 
 function getRandomInt(min, max) {
     return Math.random() * (max - min + 1) + min;
@@ -13,7 +13,7 @@ function createTile(type){
     },
     1: {
       name: 'farm',
-      format: '.svg'
+      format: '.png'
     }
   }
 
@@ -27,7 +27,7 @@ function createTile(type){
 }
 
 function append(el){
-  body.appendChild(el)
+  forest.appendChild(el)
 }
 
 function fetch(){
@@ -41,7 +41,7 @@ var interval = setInterval(function(){
   }
   fetching = true
   fetch().then(function(res){
-    body.innerHTML = ''
+    forest.innerHTML = ''
     var arr = res.data.board
     arr.forEach(function(val){
       append(createTile(val))
