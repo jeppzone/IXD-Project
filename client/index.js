@@ -1,5 +1,5 @@
 var API_URL = 'https://ixd-project-backend.herokuapp.com'
-var forest = document.querySelector('#forest');
+var forest = document.querySelector('#forest .content');
 
 function getRandomInt(min, max) {
     return Math.random() * (max - min + 1) + min;

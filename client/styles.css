@@ -26,17 +26,90 @@ p.small {
 #forest {
   margin: 0;
   padding: 0;
+  flex: 1 1 75%;
+  overflow: hidden;
+}
+
+#forest .content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1 1 75%;
+}
+
+#forest .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+
+.cloud {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  animation: moveright 35s linear infinite;
+  z-index: 1;
+}
+
+.cloud.one {
+  top: 10%;
+  left: -60%;
+  opacity: 0.75;
+}
+
+.cloud.two {
+  top: 10%;
+  left: -70%;
+}
+
+.cloud.three {
+  top: 25%;
+  left: -20%;
+  opacity: 0.5;
+}
+
+.cloud.four {
+  top: 33%;
+  left: -80%;
+}
+
+.cloud.five {
+  top: 27%;
+  left: -10%;
+}
+
+.cloud.six {
+  top: 28%;
+  left: -35%;
+}
+
+.cloud.seven {
+  top: 60%;
+  left: -15%;
+}
+
+.cloud.eight {
+  top: 80%;
+  left: -100%;
+}
+
+@keyframes moveright {
+  to {
+    left: 120%;
+  }
 }
 
 #stats {
   padding: 30px;
   flex: 1 1 25%;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(17,17,17,0.8);
   color: #fff;
+  position: relative;
+  z-index: 99;
 }
 
 #stats h1 {
