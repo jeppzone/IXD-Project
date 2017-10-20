@@ -23,23 +23,19 @@ p.small {
   font-size: 12px;
 }
 
-p.faded {
-  opacity: 0.25;
-}
-
 #forest {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1 1 66%;
+  flex: 1 1 75%;
 }
 
 #stats {
   padding: 30px;
-  flex: 1 1 33%;
-  background-color: #111;
+  flex: 1 1 25%;
+  background-color: rgba(0,0,0,0.2);
   color: #fff;
 }
 
@@ -48,7 +44,7 @@ p.faded {
 }
 
 #stats h5 {
-  opacity: 0.5;
+  opacity: 0.75;
   font-size: 1.2rem;
   margin: 1rem 0 0.5rem 0;
 }
