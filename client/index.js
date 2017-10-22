@@ -1,3 +1,11 @@
+/*
+
+How much of the forest is gone
+how many hamburgers generated
+how many animals lost their home
+
+*/
+
 var API_URL = 'https://ixd-project-backend.herokuapp.com'
 var forest = document.querySelector('#forest .content');
 
