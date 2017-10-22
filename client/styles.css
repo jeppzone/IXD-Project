@@ -98,7 +98,8 @@ p.small {
 
 .cloud.eight {
   top: 80%;
-  left: -100%;
+  left: -90%;
+  animation-delay: 5s;
 }
 
 .cloud.nine {
@@ -128,9 +129,9 @@ p.small {
 }
 
 #stats {
-  padding: 30px;
+  padding: 3rem;
   flex: 1 1 25%;
-  background-color: #111;
+  background-color: #181818;
   color: #fff;
   position: relative;
   z-index: 99;
@@ -141,9 +142,8 @@ p.small {
 }
 
 #stats h5 {
-  opacity: 0.5;
   font-size: 1.2rem;
-  margin: 2rem 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 #stats p {
@@ -152,6 +152,7 @@ p.small {
 
 hr {
   border-color: rgba(255,255,255,0.05);
+  margin: 2rem 0;
 }
 
 .tile {
@@ -188,22 +189,32 @@ hr {
 .progressbar {
   width: 100%;
   height: 50px;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.08);
   margin-top: 30px;
+  overflow: hidden;
 }
 
 .progress {
+  transition: all 200ms ease-in-out;
   width: 10%;
   height: 50px;
-  background-color: red;
+  background-color: #fe6b37;
 }
 
-h5 + .stats-numbers {
+.numbers-container {
+  width: 100%;
   margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+.numbers-container div {
+  margin-left: 1rem;
+}
 
-.stats-numbers .number-large {
+.numbers-container .number-large {
   font-size: 4rem;
   font-weight: bold;
 }
