@@ -106,7 +106,7 @@ p.small {
 #stats {
   padding: 30px;
   flex: 1 1 25%;
-  background-color: rgba(17,17,17,0.8);
+  background-color: #111;
   color: #fff;
   position: relative;
   z-index: 99;
