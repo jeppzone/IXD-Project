@@ -80,7 +80,7 @@ var interval = setInterval(function(){
 
     // ------ TODO REMOVE -------
     informationMock.hamburgers = informationMock.hamburgers + 15
-    informationMock.rainforestGone = informationMock.rainforestGone + 0.05
+    informationMock.rainforestGone = informationMock.rainforestGone + 0.01
     informationMock.animalsGone = informationMock.animalsGone + 1
     // --------------------------
 
