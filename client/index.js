@@ -61,14 +61,6 @@ function fetch(){
     ])
 }
 
-// ------ TODO REMOVE -------
-var informationMock = {
-  hamburgers: 1,
-  rainforestGone: 0.1,
-  animalsGone: 1
-}
-// --------------------------
-
 var fetching = false
 var interval = setInterval(function(){
   if (fetching) {
@@ -78,14 +70,8 @@ var interval = setInterval(function(){
   fetch().then(function(response){
     fetching = false;
 
-    // ------ TODO REMOVE -------
-    informationMock.hamburgers = informationMock.hamburgers + 15
-    informationMock.rainforestGone = informationMock.rainforestGone + 0.01
-    informationMock.animalsGone = informationMock.animalsGone + 1
-    // --------------------------
-
     var board = response[0].data
-    var information = informationMock //response[1].data
+    var information = response[1].data
 
     //generate board
     forest.innerHTML = ''
@@ -96,7 +82,7 @@ var interval = setInterval(function(){
     //generate information
     setHamburgers(information.hamburgers)
     setForest(information.rainforestGone * 100)
-    setAnimals(information.animalsGone)
+    setAnimals(information.homelessAnimals)
 
   })
 

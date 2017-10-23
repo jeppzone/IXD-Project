@@ -130,7 +130,7 @@ p.small {
 
 #stats {
   padding: 3rem;
-  flex: 1 1 25%;
+  flex: 1 0 25%;
   background-color: #181818;
   color: #fff;
   position: relative;
