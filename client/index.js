@@ -81,7 +81,7 @@ var interval = setInterval(function(){
 
     //generate information
     setHamburgers(information.hamburgers)
-    setForest(information.rainforestGone * 100)
+    setForest(information.forestGone)
     setAnimals(information.homelessAnimals)
 
   })
